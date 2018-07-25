@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="EngineerButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0.100000024dip</item>
+        <item name="android:layout_width">51.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">1.0dip</item>
+    </style>
+    <style name="EngineerButton.Calc" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_etc_font_size</item>
+        <item name="android:tag">CALC</item>
+    </style>
+    <style name="EngineerButton.Calc2" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_etc_font_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:tag">CALC2</item>
+        <item name="android:textScaleX">1.3</item>
+    </style>
+    <style name="EngineerButton.Clear" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_etc_font_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:tag">CLEAR</item>
+    </style>
+    <style name="EngineerButton.Digit" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_dgt_font_size</item>
+        <item name="android:tag">DIGIT</item>
+    </style>
+    <style name="EngineerButton.Etc" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_etc_font_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:tag">ETC</item>
+        <item name="android:textScaleX">0.7</item>
+    </style>
+    <style name="EngineerButton.Func" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_etc_font_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:tag">DIGIT</item>
+        <item name="android:textScaleX">0.7</item>
+    </style>
+    <style name="EngineerButton.Spc" parent="@style/EngineerButton">
+        <item name="android:textSize">@dimen/eng_spc_font_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:tag">SPCB</item>
+        <item name="android:textScaleX">0.7</item>
+    </style>
+    <style name="EngineerInputEditCalc1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/eng_edit1_font_size</item>
+    </style>
+    <style name="EngineerInputEditCalc2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/eng_edit2_font_size</item>
+    </style>
+    <style name="EnginneerInfoButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/slide_btn_font_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/slide_btn_width_size</item>
+        <item name="android:layout_height">@dimen/slide_btn_height_size</item>
+        <item name="android:layout_margin">0.100000024dip</item>
+        <item name="android:textScaleX">0.8</item>
+    </style>
+</resources>

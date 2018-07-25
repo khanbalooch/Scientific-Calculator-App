@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_linear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/eng_dsp_linear1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:weightSum="12.0" android:layout_weight="3.2">
+            <LinearLayout android:orientation="vertical" android:padding="0.5dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_weight="1.0">
+                <ImageButton android:id="@+id/redobtn" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="0.5dip" android:layout_weight="1.0" />
+                <ImageButton android:id="@+id/undobtn" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="0.5dip" android:layout_weight="1.0" />
+                <ImageButton android:id="@+id/slidebtn" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/eng_info_linear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="0.5dip" android:layout_marginBottom="0.5dip" android:weightSum="6.0" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/info_font_size" android:textStyle="bold" android:gravity="center" android:id="@+id/degreesinfo_txt" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/info_font_size" android:textStyle="bold" android:gravity="center" android:id="@+id/meminfo_txt" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/info_font_size" android:textStyle="bold" android:gravity="center" android:id="@+id/etcinfo_txt" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/info_font_size" android:textStyle="bold" android:gravity="center" android:id="@+id/hstinfo_txt" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/info_font_size" android:textStyle="bold" android:gravity="center" android:id="@+id/hstcnt_txt" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:id="@+id/popup_linear" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <Button android:id="@+id/popmenubtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/eng_edt_linear" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:weightSum="2.0" android:layout_weight="10.0">
+                <EditText android:enabled="true" android:textColor="#ffffffff" android:gravity="center|right" android:id="@+id/calcEdit" android:paddingLeft="2.0dip" android:paddingTop="1.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:bufferType="spannable" android:layout_weight="1.2" style="@style/EngineerInputEditCalc1" />
+                <LinearLayout android:id="@+id/calc_Input_linear" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="0.5dip" android:layout_weight="0.8">
+                    <EditText android:enabled="true" android:gravity="center|right" android:layout_gravity="top" android:id="@+id/calcInputEdit" android:paddingLeft="2.0dip" android:paddingTop="1.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:bufferType="spannable" android:layout_weight="0.8" style="@style/EngineerInputEditCalc2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/eng_dsp_linear2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="1.5dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.5dip" android:layout_marginBottom="1.5dip" android:layout_weight="6.8">
+            <LinearLayout android:orientation="vertical" android:id="@+id/eng_dgt_linear" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="2.0">
+                    <Button android:id="@+id/degreesbtn" android:text="DEG" android:layout_weight="1.0" style="@style/EngineerButton.Spc" />
+                    <Button android:id="@+id/invbtn" android:text="INV" android:layout_weight="1.0" style="@style/EngineerButton.Spc" />
+                    <Button android:id="@+id/lnbtn" android:text="ln" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/rootbtn" android:text="√" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/xsquarebtn" android:text="x²" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <ImageButton android:id="@+id/delbtn" android:layout_weight="1.0" style="@style/EngineerButton.Clear" />
+                    <Button android:id="@+id/cebtn" android:text="CE" android:layout_weight="1.0" style="@style/EngineerButton.Clear" />
+                    <Button android:id="@+id/clearbtn" android:text="C" android:layout_weight="1.0" style="@style/EngineerButton.Clear" />
+                    <Button android:id="@+id/sbrackbtn" android:text="(" android:drawablePadding="-12.0dip" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/ebrackbtn" android:text=")" android:drawablePadding="-12.0dip" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="2.0">
+                    <Button android:id="@+id/intbtn" android:text="Int" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/sinhbtn" android:text="sinh" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/sinbtn" android:text="sin" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/trootxbtn" android:text="³√x" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/x3squarebtn" android:text="x³" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/num7btn" android:text="7" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num8btn" android:text="8" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num9btn" android:text="9" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <ImageButton android:id="@+id/divbtn" android:scaleType="center" android:layout_weight="1.0" style="@style/EngineerButton.Calc" />
+                    <Button android:id="@+id/pmbtn" android:text="±" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="2.0">
+                    <Button android:id="@+id/dmsbtn" android:text="dms" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/coshbtn" android:text="cosh" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/cosbtn" android:text="cos" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/yrootxbtn" android:text="ⁿ√x" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/xysquarebtn" android:text="xⁿ" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/num4btn" android:text="4" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num5btn" android:text="5" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num6btn" android:text="6" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <ImageButton android:id="@+id/mlpbtn" android:scaleType="center" android:layout_weight="1.0" style="@style/EngineerButton.Calc" />
+                    <Button android:id="@+id/persentbtn" android:text="%" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="2.0">
+                    <Button android:id="@+id/pibtn" android:text="π" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/tanhbtn" android:text="tanh" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/tanbtn" android:text="tan" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/ppmbtn" android:text="ppm" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/tennsquarebtn" android:text="10ⁿ" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/num1btn" android:text="1" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num2btn" android:text="2" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num3btn" android:text="3" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <ImageButton android:id="@+id/minusbtn" android:scaleType="center" android:layout_weight="1.0" style="@style/EngineerButton.Calc" />
+                    <Button android:id="@+id/onexbtn" android:text="1/x" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="2.0">
+                    <Button android:id="@+id/fmebtn" android:text="F-E" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/expbtn" android:text="Exp" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/modbtn" android:text="Mod" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/logbtn" android:text="log" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/factbtn" android:text="n!" android:layout_weight="1.0" style="@style/EngineerButton.Func" />
+                    <Button android:id="@+id/num0btn" android:text="0" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/num00btn" android:text="00" android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <Button android:id="@+id/dotbtn" android:text="." android:layout_weight="1.0" style="@style/EngineerButton.Digit" />
+                    <ImageButton android:id="@+id/plusbtn" android:scaleType="center" android:layout_weight="1.0" style="@style/EngineerButton.Calc" />
+                    <ImageButton android:id="@+id/equalbtn" android:scaleType="center" android:layout_weight="1.0" style="@style/EngineerButton.Calc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/eng_calc_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <HorizontalScrollView android:id="@+id/HScroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/eng_addbtn_linear" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:id="@+id/hleftbtn" android:background="@color/colorAccent" android:text="PREV" style="@style/EnginneerInfoButton" />
+                        <Button android:id="@+id/hrightbtn" android:background="@color/colorAccent" android:text="NEXT" style="@style/EnginneerInfoButton" />
+                        <Button android:id="@+id/ansbtn" android:background="@color/colorAccent" android:text="ANS" style="@style/EnginneerInfoButton" />
+                        <Button android:id="@+id/ceditbtn" android:background="@color/colorAccent" android:text="EDIT" style="@style/EnginneerInfoButton" />
+                        <Button android:id="@+id/cleftbtn" android:background="@color/colorAccent" android:text="LEFT" style="@style/EnginneerInfoButton" />
+                        <Button android:id="@+id/crightbtn" android:background="@color/colorAccent" android:text="RIGHT" style="@style/EnginneerInfoButton" />
+                        <Button android:id="@+id/cdelbtn" android:background="@color/colorAccent" android:text="DEL" style="@style/EnginneerInfoButton" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
